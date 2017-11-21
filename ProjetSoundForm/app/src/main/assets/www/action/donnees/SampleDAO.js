@@ -21,5 +21,14 @@ var SampleDAO = function(){
 		sample.id = trouverNouvelId();
 		listeSample.push(sample);
 	}
+
+	this.modifierSample = function(sample){
+		for (var indiceSample in listeSample){
+			sampleTemp = listeSample[indiceSample];
+			if(sampleTemp.id == sample.id){
+				listeSample[indiceSample] = sample;
+			}
+		}
+	}
 	
 }
