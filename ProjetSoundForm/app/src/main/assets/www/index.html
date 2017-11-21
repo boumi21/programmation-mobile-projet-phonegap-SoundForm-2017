@@ -3,18 +3,22 @@
  <head>
      <meta charset="utf-8" />
   <title>SoundForm</title>
-  <style type="text/css">
-  </style>
+  <style type="text/css"></style>
+     <script>
+        function fermerPopup()
+        {
+            window.close()
+        }
+     </script>
  </head>
-
  <body>
- 	Il y a une erreur
-    <script id="page-menu" type ="text/plain">
-        <div>
-            <button><a href="#">Sampleur</a></button>
-            <button><a href="#">Editeur</a></button>
-            <button><a href="#">Quitter</a></button>
-        </div>
+    <div>
+        <button><a href="#page-sample">Sampleur</a></button>
+        <button><a href="#page-modifier-sample">Editeur</a></button>
+        <button onclick="fermerPopup()">Quitter</button>
+    </div>
+    <script id="page-sample" type ="text/plain">
+
     </script>
 
  	<script id="page-ajouter-sample" type ="text/plain">
