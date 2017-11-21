@@ -12,5 +12,9 @@ var SampleDAO = function(){
 			if(sample.id == id) return sample;
 		}
 	}
+
+	trouverNouvelId = function(){
+		return listeSample[listeSample.lenght - 1].id + 1;
+	}
 	
 }
