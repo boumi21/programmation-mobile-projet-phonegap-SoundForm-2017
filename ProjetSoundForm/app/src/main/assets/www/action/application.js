@@ -1,5 +1,6 @@
 var applicationSoundForm =
 {
+	ajouterSampleVue : new AjouterSampleVue(),
     sampleDAO : new SampleDAO(),
     lancer:function()
     {
@@ -10,10 +11,15 @@ var applicationSoundForm =
     {
         var ancre = window.location.hash;
 
-         else if(ancre.match(/^#ajouter-sample/))
+         if(!ancre){
+			var listeSample = this.sampleDAO.getListeSample();
+
+			var menuVue = new MenuVue();
+			menuVue.afficher();
+		}else if(ancre.match(/^#ajouter-sample/))
                 {
                     this.ajouterSampleVue.afficher();
                 }
     }
 }
-applicationListeNoel.lancer();
+applicationSoundForm.lancer();
