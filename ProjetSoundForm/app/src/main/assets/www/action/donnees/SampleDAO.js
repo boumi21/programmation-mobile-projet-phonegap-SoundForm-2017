@@ -16,5 +16,10 @@ var SampleDAO = function(){
 	trouverNouvelId = function(){
 		return listeSample[listeSample.lenght - 1].id + 1;
 	}
+
+	this.ajouterSample = function(sample){
+		sample.id = trouverNouvelId();
+		listeSample.push(sample);
+	}
 	
 }
