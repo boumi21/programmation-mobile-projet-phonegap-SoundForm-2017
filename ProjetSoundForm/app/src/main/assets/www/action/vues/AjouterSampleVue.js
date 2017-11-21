@@ -1,9 +1,9 @@
-var AjouterFormeVue = function(){
+var AjouterSampleVue = function(){
 	instance = this;
 	this.afficher = function(){
 
-		this.forme = null;
-		$("body").html(AjouterFormeVue.pageAjouterForme);
+		this.sample = null;
+		$("body").html(AjouterSampleVue.pageAjouterSample);
 		$("#formulaire-ajouter").on("submit", function(evenement){
 			evenement.preventDefault();
 
@@ -12,8 +12,8 @@ var AjouterFormeVue = function(){
 			var fichier = $("#fichier").val();
 			var couleur = $("#couleur").val();
 			var dimension = $("#dimension").val();
-			instance.forme = new Forme(nom, forme, fichier, couleur, dimension);
-			window.location.hash = "#AjouterFormeVue:NouvelleForme";
+			instance.sample = new Sample(nom, forme, fichier, couleur, dimension);
+			window.location.hash = "#AjouterSampleVue:NouveauSample";
 
 		});
 
@@ -21,4 +21,4 @@ var AjouterFormeVue = function(){
 	}
 }
 
-AjouterFormeVue.pageAjouterForme = $("#page-ajouter-forme").html();
+AjouterSampleVue.pageAjouterSample = $("#page-ajouter-sample").html();
