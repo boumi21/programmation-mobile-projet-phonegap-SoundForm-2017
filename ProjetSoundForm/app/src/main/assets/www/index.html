@@ -42,5 +42,38 @@
         </form>
         </div>
     </script>
+
+    <script id="page-modifier-forme" type ="text/plain">
+        <div>
+            <form id= "formulaire-modifier">
+           
+              <div>
+                  <label for="nom">Nom</label>
+                  <input type="text" name="nom" id="nom"/>
+              </div>
+              <div>
+                  <label for="forme">Forme : </label>
+       <select name="forme" id="forme">
+           <option value="rectangle">Rectangle</option>
+           <option value="cercle">Cercle</option>
+           <option value="triangle">Triangle</option>
+       </select>
+              </div>
+              <div>
+                  <label for="son">Son</label>
+                  <input type="file" name="son" id="son" />
+              </div>
+              <div>
+                  <label for="prix">Couleur</label>
+                  <input type="couleur" name="couleur" id="couleur" />
+              </div>
+              <div>
+                  <label for="dimensions">Dimensions</label>
+                  <input type="range" name="dimensions" id="dimensions" />
+              </div>
+            <input type ="submit" value="modifier la forme"/>
+        </form>
+        </div>
+    </script>
  </body>
  </html>
