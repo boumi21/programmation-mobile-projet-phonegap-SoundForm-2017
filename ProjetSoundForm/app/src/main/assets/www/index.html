@@ -2,89 +2,87 @@
 <html>
  <head>
      <meta charset="utf-8" />
-  <title>SoundForm</title>
-  <style type="text/css"></style>
-     <script>
-        function fermerPopup()
-        {
-            window.close()
-        }
-     </script>
+     <title>SoundForm</title>
+     <style type="text/css"></style>
  </head>
  <body>
+
+ <script id="page-menu" type ="text/plain">
     <div>
         <button><a href="#page-sample">Sampleur</a></button>
         <button><a href="#page-modifier-sample">Editeur</a></button>
-        <button onclick="fermerPopup()">Quitter</button>
     </div>
-    <script id="page-sample" type ="text/plain">
+ </script>
+
+ <script id="page-sample" type ="text/plain">
 
     </script>
 
- 	<script id="page-ajouter-sample" type ="text/plain">
-        <div>
-            <form id= "formulaire-ajouter">
-           
-              <div>
-                  <label for="nom">Nom</label>
-                  <input type="text" name="nom" id="nom"/>
-              </div>
-              <div>
-                  <label for="forme">Forme : </label>
-       <select name="forme" id="forme">
-           <option value="rectangle">Rectangle</option>
-           <option value="cercle">Cercle</option>
-           <option value="triangle">Triangle</option>
-       </select>
-              </div>
-              <div>
-                  <label for="fichier">Son</label>
-                  <input type="file" name="fichier" id="fichier" />
-              </div>
-              <div>
-                  <label for="prix">Couleur</label>
-                  <input type="couleur" name="couleur" id="couleur" />
-              </div>
-              <div>
-                  <label for="dimension">Dimensions</label>
-                  <input type="range" name="dimension" id="dimension" />
-              </div>
-            <input type ="submit" value="ajouter la forme"/>
-        </form>
-        </div>
-    </script>
+ <script id="page-ajouter-sample" type ="text/plain">
+    <div>
+        <form id= "formulaire-ajouter">
 
-    <script id="page-modifier-sample" type ="text/plain">
-        <div>
-            <form id= "formulaire-modifier">
-           
-              <div>
-                  <label for="nom">Nom</label>
-                  <input type="text" name="nom" id="nom"/>
-              </div>
-              <div>
-                  <label for="forme">Forme : </label>
-       <select name="forme" id="forme">
-           <option value="rectangle">Rectangle</option>
-           <option value="cercle">Cercle</option>
-           <option value="triangle">Triangle</option>
-       </select>
-              </div>
-              <div>
-                  <label for="fichier">Son</label>
-                  <input type="file" name="fichier" id="fichier" />
-              </div>
-              <div>
-                  <label for="prix">Couleur</label>
-                  <input type="couleur" name="couleur" id="couleur" />
-              </div>
-              <div>
-                  <label for="dimension">Dimensions</label>
-                  <input type="range" name="dimension" id="dimension" />
-              </div>
-            <input type ="submit" value="modifier le sample"/>
-        </form>
-        </div>
-    </script>
+          <div>
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom"/>
+          </div>
+          <div>
+              <label for="forme">Forme : </label>
+   <select name="forme" id="forme">
+       <option value="rectangle">Rectangle</option>
+       <option value="cercle">Cercle</option>
+       <option value="triangle">Triangle</option>
+   </select>
+          </div>
+          <div>
+              <label for="fichier">Son</label>
+              <input type="file" name="fichier" id="fichier" />
+          </div>
+          <div>
+              <label for="prix">Couleur</label>
+              <input type="couleur" name="couleur" id="couleur" />
+          </div>
+          <div>
+              <label for="dimension">Dimensions</label>
+              <input type="range" name="dimension" id="dimension" />
+          </div>
+        <input type ="submit" value="ajouter la forme"/>
+    </form>
+    </div>
+ </script>
+
+ <script id="page-modifier-sample" type ="text/plain">
+    <div>
+        <form id= "formulaire-modifier">
+
+          <div>
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom"/>
+          </div>
+          <div>
+              <label for="forme">Forme : </label>
+   <select name="forme" id="forme">
+       <option value="rectangle">Rectangle</option>
+       <option value="cercle">Cercle</option>
+       <option value="triangle">Triangle</option>
+   </select>
+          </div>
+          <div>
+              <label for="fichier">Son</label>
+              <input type="file" name="fichier" id="fichier" />
+          </div>
+          <div>
+              <label for="prix">Couleur</label>
+              <input type="couleur" name="couleur" id="couleur" />
+          </div>
+          <div>
+              <label for="dimension">Dimensions</label>
+              <input type="range" name="dimension" id="dimension" />
+          </div>
+        <input type ="submit" value="modifier le sample"/>
+    </form>
+    </div>
+ </script>
+
  </body>
  </html>
