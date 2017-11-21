@@ -30,5 +30,14 @@ var SampleDAO = function(){
 			}
 		}
 	}
+
+	this.supprimerSample = function(id){
+		for(var indiceSample in listeSample){
+			sample = listeSample[indiceSample];
+			if(sample.id == id){
+				listeSample.splice(indiceSample,indiceSample+1);
+			}
+		}
+	}
 	
 }
