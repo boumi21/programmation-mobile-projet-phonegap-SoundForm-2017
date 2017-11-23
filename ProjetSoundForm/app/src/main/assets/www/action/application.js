@@ -2,6 +2,7 @@ var applicationSoundForm =
 {
 	ajouterSampleVue : new AjouterSampleVue(),
     sampleDAO : new SampleDAO(),
+    modifierSampleVue: new ModifierSampleVue(),
     lancer:function()
     {
         $(window).on('hashchange',$.proxy(this.naviguer, this));
@@ -19,7 +20,10 @@ var applicationSoundForm =
 		}else if(ancre.match(/^#ajouter-sample/)){
                     this.ajouterSampleVue.afficher();
         }else if(ancre.match(/^#modifier-sample/)){
-                    this.modifierSampleVue.afficher();
+        	console.log(sample1);
+                    var id = 1;
+                    var sample = this.sampleDAO.getSampleParId(id);
+                    this.modifierSampleVue.afficher(sample);
         }else if(ancre.match(/^#AjouterSampleVue:NouveauSample/)){
             var sample = this.ajouterSampleVue.sample;
 			this.sampleDAO.ajouterSample(sample);
