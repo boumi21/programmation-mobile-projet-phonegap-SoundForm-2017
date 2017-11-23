@@ -30,7 +30,10 @@ var SampleDAO = function(){
 	}
 
 	trouverNouvelId = function(){
-		return listeSample[listeSample.lenght - 1].id + 1;
+		if(listeSample[listeSample.length - 1]){
+			return listeSample[listeSample.length - 1].id + 1;
+		}
+		return 1;
 	}
 
 	this.ajouterSample = function(sample){
