@@ -18,10 +18,15 @@ var applicationSoundForm =
 			menuVue.afficher();
 		}else if(ancre.match(/^#ajouter-sample/)){
                     this.ajouterSampleVue.afficher();
+        }else if(ancre.match(/^#modifier-sample/)){
+                    this.modifierSampleVue.afficher();
         }else if(ancre.match(/^#AjouterSampleVue:NouveauSample/)){
-        	console.log("mdrrrr");
             var sample = this.ajouterSampleVue.sample;
 			this.sampleDAO.ajouterSample(sample);
+			window.location.hash = "#";
+        }else if(ancre.match(/^#ModifierSampleVue:NouveauSample/)){
+            var sample = this.modifierSampleVue.sample;
+			this.sampleDAO.modifierSample(sample);
 			window.location.hash = "#";
         }
     }
