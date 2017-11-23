@@ -16,10 +16,14 @@ var applicationSoundForm =
 
 			var menuVue = new MenuVue();
 			menuVue.afficher();
-		}else if(ancre.match(/^#ajouter-sample/))
-                {
+		}else if(ancre.match(/^#ajouter-sample/)){
                     this.ajouterSampleVue.afficher();
-                }
+        }else if(ancre.match(/^#AjouterSampleVue:NouveauSample/)){
+        	console.log("mdrrrr");
+            var sample = this.ajouterSampleVue.sample;
+			this.sampleDAO.ajouterSample(sample);
+			window.location.hash = "#";
+        }
     }
 }
 applicationSoundForm.lancer();
