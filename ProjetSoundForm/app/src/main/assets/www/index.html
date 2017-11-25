@@ -13,9 +13,26 @@
 
  <script id="page-menu" type ="html/plain">
     <div>
-        <button class="btn btn-transparent btn-lg btn-block animated bounceInDown"><a href="#page-sample">Sampleur</a></button>
+        <button class="btn btn-transparent btn-lg btn-block animated bounceInDown "><a href="#page-sample">Sampleur</a></button>
         <button class="btn btn-transparent btn-lg btn-block"><a href="#page-modifier-sample">Editeur</a></button>
         <button class="btn btn-transparent btn-lg btn-block"><a href="#modifier-sample">Modifier</a></button>
+    </div>
+    <div>
+        <button id="playButton">Detente</a>
+        <div class="box"></div>
+
+        <script type="text/javascript">
+            document.getElementById('playButton').onclick = function(e){
+            move('.box')
+          .set('background-color', 'red')
+          .x(150)
+          .then()
+          .y(200)
+          .set('background-color', 'green')
+          .end();
+
+        };
+        </script>
     </div>
  </script>
 
@@ -93,6 +110,7 @@
 
  <!--script type="text/javascript" charset="utf-8" src="lib/cordova.js"></script-->
     <script type="text/javascript" charset="utf-8" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="js/move.js"></script>
     <script src="action/modeles/Sample.js"></script>
     <script src="action/donnees/SampleDAO.js"></script>
     <script src="action/vues/ListeSampleVue.js"></script>
