@@ -36,12 +36,12 @@ var applicationSoundForm =
         }else if(ancre.match(/^#AjouterSampleVue:NouveauSample/)){
             var sample = this.ajouterSampleVue.sample;
 			this.sampleDAO.ajouterSample(sample);
-			window.location.hash = "#";
+			window.location.hash = "#page-liste-sample/";
 
         }else if(ancre.match(/^#ModifierSampleVue:NouveauSample/)){
             var sample = this.modifierSampleVue.sample;
 			this.sampleDAO.modifierSample(sample);
-			window.location.hash = "#";
+			window.location.hash = "#page-liste-sample/";
         }
     }
 }
