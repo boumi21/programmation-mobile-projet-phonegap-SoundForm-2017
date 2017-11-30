@@ -27,9 +27,9 @@ var applicationSoundForm =
 		}else if(ancre.match(/^#ajouter-sample/)){
             this.ajouterSampleVue.afficher();
 
-        }else if(ancre.match(/^#modifier-sample/)){
-        	console.log(sample1);
-            var id = 1;
+        }else if(ancre.match(/^#modifier-sample\/([0-9]+)/)){
+        	var trouvaille = ancre.match(/^#modifier-sample\/([0-9]+)/);
+            var id = trouvaille[1];
             var sample = this.sampleDAO.getSampleParId(id);
             this.modifierSampleVue.afficher(sample);
 
