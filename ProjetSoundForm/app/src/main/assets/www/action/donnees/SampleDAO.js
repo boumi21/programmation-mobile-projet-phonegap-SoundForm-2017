@@ -1,8 +1,6 @@
 var SampleDAO = function(){
 
-	sample1 = new Sample(1, 'sample1', 'cercle', '','vert',10)
-	listeSample = [sample1];
-	console.log(listeSample);
+	listeSample = [];
 
 	initialiser = function(){
 		if(localStorage['sample']){
