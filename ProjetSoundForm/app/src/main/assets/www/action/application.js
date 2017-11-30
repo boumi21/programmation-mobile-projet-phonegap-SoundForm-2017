@@ -3,6 +3,7 @@ var applicationSoundForm =
 	ajouterSampleVue : new AjouterSampleVue(),
     sampleDAO : new SampleDAO(),
     modifierSampleVue: new ModifierSampleVue(),
+    supprimerSampleVue: new SupprimerSampleVue(),
     listeSampleVue : new ListeSampleVue(),
 
     lancer:function()
@@ -33,6 +34,12 @@ var applicationSoundForm =
             var sample = this.sampleDAO.getSampleParId(id);
             this.modifierSampleVue.afficher(sample);
 
+        }else if(ancre.match(/^#supprimer-sample\/([0-9]+)/)){
+            var trouvaille = ancre.match(/^#supprimer-sample\/([0-9]+)/);
+            var id = trouvaille[1];
+            var sample = this.sampleDAO.getSampleParId(id);
+            this.supprimerSampleVue.afficher(sample);
+
         }else if(ancre.match(/^#AjouterSampleVue:NouveauSample/)){
             var sample = this.ajouterSampleVue.sample;
 			this.sampleDAO.ajouterSample(sample);
@@ -42,6 +49,10 @@ var applicationSoundForm =
             var sample = this.modifierSampleVue.sample;
 			this.sampleDAO.modifierSample(sample);
 			window.location.hash = "#page-liste-sample/";
+        }else if(ancre.match(/^#SupprimerSampleVue:NouveauSample/)){
+            var id = this.supprimerSampleVue.id;
+            this.sampleDAO.supprimerSample(id);
+            window.location.hash = "#page-liste-sample/";
         }
     }
 }
