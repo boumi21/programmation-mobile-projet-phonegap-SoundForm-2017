@@ -9,7 +9,6 @@ var AjouterSampleVue = function(){
 
 			var nom = $("#nom").val();
 			var forme = $("#forme").val();
-			var fichier = $("#fichier").val();
 			var couleur = $("#couleur").val();
 			var dimension = $("#dimension").val();
 			instance.sample = new Sample(undefined, nom, forme, fichier, couleur, dimension);

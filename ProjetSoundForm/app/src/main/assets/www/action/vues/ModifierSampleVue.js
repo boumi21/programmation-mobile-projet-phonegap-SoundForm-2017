@@ -14,10 +14,9 @@ var ModifierSampleVue = function(){
 
 			var nom = $("#nom").val();
 			var forme = $("#forme").val();
-			var fichier = $("#");
 			var couleur = $("#couleur").val();
 			var dimension = $("#dimension").val();
-			instance2.sample = new Sample(id, nom, forme, fichier, couleur, dimension);
+			instance2.sample = new Sample(id, nom, forme, couleur, dimension);
 			window.location.hash = "#ModifierSampleVue:NouveauSample";
 
 		});
