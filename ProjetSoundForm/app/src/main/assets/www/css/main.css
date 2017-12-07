@@ -38,7 +38,11 @@ body{
     {
       height: 2.375rem;
     }
-
+     #img{
+        background-image: url("Ajouter.jpg");
+        background-size : cover;
+        background-repeat : no-repeat;
+        }
     #formulaire-ajouter{
      width:100%;
     }
