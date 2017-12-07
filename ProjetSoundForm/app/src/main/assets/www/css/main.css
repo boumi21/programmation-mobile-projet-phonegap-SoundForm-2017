@@ -33,4 +33,8 @@ body{
       color: #222;
       text-decoration: none;
     }
+
+    .form-control {
+  height: 2.375rem;
+}
 }
