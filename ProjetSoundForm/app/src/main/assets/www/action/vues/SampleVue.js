@@ -15,6 +15,16 @@ var SampleVue = function(){
 
                 canvas.add(rect);
 
+            } else if(sample.forme == "Triangle"){
+                var triangle = new fabric.Circle({
+                    left: sample.positionX,
+                    top: sample.positionY,
+                    fill: sample.couleur,
+                    width: sample.dimension,
+                    height: sample.dimension
+                });
+
+                canvas.add(triangle);
             }
         }
     }
