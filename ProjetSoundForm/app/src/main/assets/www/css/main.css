@@ -34,7 +34,20 @@ body{
       text-decoration: none;
     }
 
-    .form-control {
-  height: 2.375rem;
-}
+    .form-control
+    {
+      height: 2.375rem;
+    }
+
+    #formulaire-ajouter{
+     width:100%;
+    }
+
+    .taille{
+     width:100%;
+    }
+    label.text-center{
+    width:100%;
+    text-align: center;
+    }
 }

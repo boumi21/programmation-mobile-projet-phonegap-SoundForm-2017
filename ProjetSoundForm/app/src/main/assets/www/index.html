@@ -53,29 +53,28 @@
  <script id="page-ajouter-sample" type ="html/plain">
     <div>
         <form id= "formulaire-ajouter">
-
-          <div>
-              <label for="nom">Nom</label>
-              <input type="text" name="nom" id="nom"/>
-          </div>
-          <div>
-              <label for="forme">Forme : </label>
-   <select name="forme" id="forme">
-       <option value="rectangle">Rectangle</option>
-       <option value="cercle">Cercle</option>
-       <option value="triangle">Triangle</option>
-   </select>
-          </div>
-          <div>
-             <label for="couleurInputLg">Color Input</label>
-              <input type="color" class="form-control" id="colorInput" name="couleur" id="couleur" />
-          </div>
-          <div>
-              <label for="dimension">Dimensions</label>
-              <input type="range" name="dimension" id="dimension" />
-          </div>
-        <input type ="submit" value="ajouter la forme"/>
-    </form>
+              <div class="taille">
+                  <label class="text-center" for="nom">Nom</label>
+                  <input type="text" class="form-control" name="nom" id="nom"/>
+              </div>
+              <div class="taille">
+                    <label for="forme">Forme : </label>
+                    <select name="forme" id="forme">
+                        <option value="rectangle">Rectangle</option>
+                        <option value="cercle">Cercle</option>
+                        <option value="triangle">Triangle</option>
+                    </select>
+              </div>
+              <div class="taille">
+                 <label for="couleurInputLg">Color Input</label>
+                  <input type="color" class="form-control input-lg" id="colorInputLg" name="couleur" id="couleur" />
+              </div>
+              <div class="taille">
+                  <label for="dimension">Dimensions</label>
+                  <input type="range" name="dimension" id="dimension" />
+              </div>
+              <input type ="submit" value="ajouter la forme"/>
+        </form>
     <button class="btn-lg btn-info" id="btnRetour"><a href="#">Retour</a></button>
     </div>
  </script>
