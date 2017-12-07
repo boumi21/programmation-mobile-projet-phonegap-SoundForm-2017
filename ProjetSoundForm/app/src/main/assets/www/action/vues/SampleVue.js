@@ -25,6 +25,7 @@ var SampleVue = function(){
                 });
 
                 canvas.add(triangle);
+
             } else if(sample.forme == "Cercle") {
                 var cercle = new fabric.Circle({
                     radius: sample.dimension,
@@ -32,6 +33,8 @@ var SampleVue = function(){
                     top: sample.positionY,
                     fill: sample.couleur
                 });
+
+                canvas.add(cercle);
             }
         }
     }
