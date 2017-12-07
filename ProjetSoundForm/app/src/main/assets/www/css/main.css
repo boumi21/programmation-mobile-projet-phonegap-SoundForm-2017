@@ -73,7 +73,13 @@ body{
         background: #4CAF50; /* Green background */
         cursor: pointer; /* Cursor on hover */
     }
-
-
+    .moitierd{
+    float: left;
+    width:50%;
+    }
+    .moitierl{
+        float: left;
+        width:50%;
+        }
 
 }
