@@ -10,6 +10,7 @@ var AjouterSampleVue = function(){
 			var nom = $("#nom").val();
 			var forme = $("#forme").val();
 			var couleur = $("#couleur").val();
+			Console.log(couleur);
 			var dimension = $("#dimension").val();
 			instance.sample = new Sample(undefined, nom, forme, couleur, dimension);
 			window.location.hash = "#AjouterSampleVue:NouveauSample";

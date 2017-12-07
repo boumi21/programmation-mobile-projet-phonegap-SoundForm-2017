@@ -1,10 +1,10 @@
-var Sample = function(id = undefined, nom, forme, fichier, couleur, dimension, positionX, positionY){
+var Sample = function(id = undefined, nom, forme, fichier, couleur, dimension){
 	this.id = id;
 	this.nom = nom;
 	this.forme = forme;
 	this.couleur = couleur;
 	this.dimension = dimension;
-	this.positionX = positionX;
-	this.positionY = positionY;
+	this.positionX = 1;
+	this.positionY = 1;
 
 }
