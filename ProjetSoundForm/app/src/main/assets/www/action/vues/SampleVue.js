@@ -25,6 +25,13 @@ var SampleVue = function(){
                 });
 
                 canvas.add(triangle);
+            } else if(sample.forme == "Cercle") {
+                var cercle = new fabric.Circle({
+                    radius: sample.dimension,
+                    left: sample.positionX,
+                    top: sample.positionY,
+                    fill: sample.couleur
+                });
             }
         }
     }
