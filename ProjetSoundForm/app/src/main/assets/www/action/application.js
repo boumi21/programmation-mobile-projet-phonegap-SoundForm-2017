@@ -40,6 +40,11 @@ var applicationSoundForm =
             var sample = this.sampleDAO.getSampleParId(id);
             this.supprimerSampleVue.afficher(sample);
 
+        }else if(ancre.match(/^#page-editeur-sample/)){
+            var listeSample = this.sampleDAO.getListeSample();
+            var editeurSampleVue = new EditeurSampleVue(listeSample);
+            editeurSampleVue.afficher();
+
         }else if(ancre.match(/^#AjouterSampleVue:NouveauSample/)){
             var sample = this.ajouterSampleVue.sample;
 			this.sampleDAO.ajouterSample(sample);
