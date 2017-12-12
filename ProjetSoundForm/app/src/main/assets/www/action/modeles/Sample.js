@@ -1,4 +1,4 @@
-var Sample = function(id = undefined, nom, forme, fichier, couleur, dimension){
+var Sample = function(id = undefined, nom, forme, couleur, dimension){
 	this.id = id;
 	this.nom = nom;
 	this.forme = forme;
