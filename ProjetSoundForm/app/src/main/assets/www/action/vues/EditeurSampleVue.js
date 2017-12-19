@@ -11,7 +11,7 @@ var EditeurSampleVue = function(listeSample){
                 var rect = new fabric.Rect({
                     left: sample.positionX,
                     top: sample.positionY,
-                    fill: '#000000',
+                    fill: sample.couleur,
                     width: sample.dimension,
                     height: sample.dimension
                     
