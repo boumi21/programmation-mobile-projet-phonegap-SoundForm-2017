@@ -3,7 +3,6 @@ var EditeurSampleVue = function(listeSample){
 	this.afficher = function(){
 		$("body").html(EditeurSampleVue.pageEditeurSample);
 
-
 		var canvas = new fabric.Canvas('canvasEditeurSampler',{width: 500, height:300});
 
         for (sample of listeSample){
@@ -40,8 +39,14 @@ var EditeurSampleVue = function(listeSample){
 
                 canvas.add(cercle);
             }
+            rect.on('selected', function() {
+			
+  			var audio = new Audio('test.mp3');
+		audio.play();
+		});
         }
 		console.log(canvas);
+		
 	}
 }
 
