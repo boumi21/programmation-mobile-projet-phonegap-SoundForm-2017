@@ -5,6 +5,7 @@ var applicationSoundForm =
     modifierSampleVue: new ModifierSampleVue(),
     supprimerSampleVue: new SupprimerSampleVue(),
     listeSampleVue : new ListeSampleVue(),
+    sampleVue : new SampleVue(),
 
     lancer:function()
     {
@@ -44,6 +45,9 @@ var applicationSoundForm =
             var listeSample = this.sampleDAO.getListeSample();
             var editeurSampleVue = new EditeurSampleVue(listeSample);
             editeurSampleVue.afficher();
+
+        }else if(ancre.match(/^#page-sample/)){
+            this.sampleVue.afficher(listeSample);
 
         }else if(ancre.match(/^#AjouterSampleVue:NouveauSample/)){
             var sample = this.ajouterSampleVue.sample;
