@@ -12,7 +12,7 @@ var MenuVue = function()
                         var rect = new fabric.Rect({
                             left: 100,
                             top: 100,
-                            fill: 'red',
+                            fill: '#808080',
                             width: 100,
                             height: 100
                         });
@@ -21,16 +21,7 @@ var MenuVue = function()
 
 
 
-		document.getElementById('playButton').onclick = function(e){
-		            move('.box')
-		          .set('background-color', 'red')
-		          .x(150)
-		          .then()
-		          .y(200)
-		          .set('background-color', 'green')
-		          .end();
 
-		        };
 
         var myElement = document.getElementById('testHammer');
         var mc = new Hammer(myElement);
