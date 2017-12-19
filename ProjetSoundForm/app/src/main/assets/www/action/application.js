@@ -47,6 +47,7 @@ var applicationSoundForm =
             editeurSampleVue.afficher();
 
         }else if(ancre.match(/^#page-sample/)){
+            var listeSample = this.sampleDAO.getListeSample();
             this.sampleVue.afficher(listeSample);
 
         }else if(ancre.match(/^#AjouterSampleVue:NouveauSample/)){
