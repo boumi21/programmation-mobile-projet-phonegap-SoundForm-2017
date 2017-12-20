@@ -3,7 +3,7 @@ var SampleVue = function(){
     this.afficher = function(listeSample){
         $("body").html(SampleVue.pageSampleVue);
 
-        var canvas = new fabric.Canvas('canvasSampleur',{width: 1000, height:1100});
+        var canvas = new fabric.Canvas('canvasSampleur',{width: 1000, height:1050});
 
         for (sample of listeSample){
             if (sample.forme == "rectangle"){
@@ -23,6 +23,10 @@ var SampleVue = function(){
                 rect.hasBorders = false;
                 rect.hasControls = false;
                 rect.hasRotatingPoint = false;
+                rect.on('selected',function(){
+                    var audio = new Audio('Snare_5.wav');
+                    audio.play();
+                });
 
                 canvas.add(rect);
 
@@ -43,6 +47,10 @@ var SampleVue = function(){
                 triangle.hasBorders = false;
                 triangle.hasControls = false;
                 triangle.hasRotatingPoint = false;
+                triangle.on('selected',function(){
+                    var audio = new Audio('Hat_3.wav');
+                    audio.play();
+                })
 
                 canvas.add(triangle);
 
@@ -62,6 +70,10 @@ var SampleVue = function(){
                 cercle.hasBorders = false;
                 cercle.hasControls = false;
                 cercle.hasRotatingPoint = false;
+                cercle.on('selected',function(){
+                    var audio = new Audio('Kick.wav');
+                    audio.play();
+                })
 
                 canvas.add(cercle);
             }
