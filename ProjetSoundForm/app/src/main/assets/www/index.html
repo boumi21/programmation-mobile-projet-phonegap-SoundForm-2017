@@ -14,7 +14,6 @@
  <script id="page-menu" type ="html/plain">
     <div>
         <button class="btn btn-transparent btn-lg btn-block animated bounceInDown "><a href="#page-sample">Sampleur</a></button>
-        <button class="btn btn-transparent btn-lg btn-block"><a href="#page-editeur-sample">Editeur</a></button>
         <button class="btn btn-transparent btn-lg btn-block"><a href="#page-liste-sample">liste des samples</a></button>
         <button class="btn-lg btn-warning btn-block" id="testHammer"><a href="#">Hammer</a></button>
     </div>
@@ -26,8 +25,9 @@
  </script>
 
  <script id="page-sample" type ="html/plain">
+ <button class="btn-lg btn-success"><a href="#">Retour</a></button>
         <div>
-        <button class="btn-lg btn-success"><a href="#">Retour</a></button>
+
         <canvas id="canvasSampleur"></canvas>
         </div>
   </script>
@@ -84,11 +84,20 @@
                   <label for="dimension" class="text-center">Dimensions</label>
                   <input type="range" name="dimension" id="dimension" class="slider"/>
               </div>
-      <div class="taille">
+
+              <div class="taille">
+                  <label for="positionX" class="text-center">Position en X (entre 0 et 1)</label>
+                  <input type="number" name="positionX" id="positionX" class="slider" step="any"/>
+              </div>
+              <div class="taille">
+                  <label for="positionY" class="text-center">Position en Y (entre 0 et 1)</label>
+                  <input type="number" name="positionY" id="positionY" class="slider" step="any"/>
+              </div>
+              <div class="taille">
                   <input type ="submit" class="btn btn-transparent moitierl" value="ajouter la forme" />
+              </div>
         </form>
-            <button class="btn btn-transparent moitierd" id="btnRetour"><a href="#page-liste-sample">Retour</a></button>
-      </div>
+        <button class="btn btn-transparent moitierd" id="btnRetour"><a href="#page-liste-sample">Retour</a></button>
     </div>
  </script>
 
@@ -116,6 +125,14 @@
               <label for="dimension">Dimensions</label>
               <input type="range" name="dimension" id="dimension" />
           </div>
+          <div class="taille">
+                  <label for="positionX" class="text-center">Position en X (entre 0 et 1)</label>
+                  <input type="number" name="positionX" id="positionX" class="slider" step="any"/>
+              </div>
+              <div class="taille">
+                  <label for="positionY" class="text-center">Position en Y (entre 0 et 1)</label>
+                  <input type="number" name="positionY" id="positionY" class="slider" step="any"/>
+              </div>
         <input type ="submit" value="modifier le sample"/>
     </form>
     <button class="btn-lg btn-info" id="btnRetour"><a href="#page-liste-sample">Retour</a></button>
@@ -135,7 +152,6 @@
     <script src="action/vues/ModifierSampleVue.js"></script>
     <script src="action/vues/AjouterSampleVue.js"></script>
     <script src="action/vues/SupprimerSampleVue.js"></script>
-    <script src="action/vues/EditeurSampleVue.js"></script>
     <script src="action/vues/MenuVue.js"></script>
     <script src="action/application.js"></script>
 

@@ -11,7 +11,9 @@ var AjouterSampleVue = function(){
 			var forme = $("#forme").val();
 			var couleur = $("#couleur").val();
 			var dimension = $("#dimension").val();
-			instance.sample = new Sample(undefined, nom, forme, couleur, dimension);
+			var positionX = $("#positionX").val();
+			var positionY = $("#positionY").val();
+			instance.sample = new Sample(undefined, nom, forme, couleur, dimension, positionX, positionY);
 			window.location.hash = "#AjouterSampleVue:NouveauSample";
 
 		});
